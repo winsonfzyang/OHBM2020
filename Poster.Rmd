@@ -1,0 +1,160 @@
+---
+title: BRIEF MEDITATION TRAINING MODULATES RESTING CAUSAL RELATIONSHIP BETWEEN THE CINGULATE CORTEX AND INSULA
+author:
+  - name: Winson Fu Zun Yang
+    affil: 1
+    twitter: winsonfzyang
+    email: winson.yang@ttu.edu
+    main: true
+  - name: Yiyuan Tang
+    affil: 1
+    main: true
+affiliation:
+  - num: 1
+    address: Department of Psychological Sciences, Texas Tech Univeristy University
+main_findings: feedback loop between RAI and Cingulate found in meditation
+output: 
+  posterdown::posterdown_betterport:
+    self_contained: false
+
+
+#---POSTER SIZE ADN DEFAULT FONT---#
+titlebox_height: "20%"
+poster_height: "16in"	
+poster_width: "32in"
+font_family: ""
+
+#---POSTER TITLE OPTIONS---#
+title_textsize: "32pt"
+titlebox_bordercol: "#CC0000"
+titlebox_borderwidth: "0.5cm"
+
+author_textsize: "28pt"
+author_textcol: "#CC0000"
+
+affiliation_textsize: "18pt"
+affiliation_textcol: "#CC0000"
+
+#---LOGO OPTIONS---#
+logoright_name: img/TTU_logo.png
+logoleft_name: img/TTU_logo.png
+
+
+#---POSTER BODY OPTIONS---#
+primary_colour: "#000000"
+secondary_colour: "#CC0000"
+accent_colour: "#5d19c4"
+
+body_bgcol: "#ffffff"
+body_textsize: "18pt"
+body_textcol: "#000000"
+
+column_numbers: 4
+column_margins: "0.5in"
+columnline_col: "#000000"
+columnline_width: "1mm"	
+columnline_style: ""
+
+#---SECTION TITLE STYLING---#
+sectitle_textcol: ""
+sectitle_bgcol: "#CC0000"
+sectitle_bordercol: "#000000"
+sectitle_textsize: "32pt"
+sectitle2_textsize: "28pt"
+sectitle_borderwidth: "1.5mm"
+
+#---BIBLIOGRAPHY OPTIONS---#
+bibliography: mybib.bib
+bibliography_spacing: ""
+reference_textsize: "16px"
+csl: elsevier-vancouver.csl
+link-citations: "true"
+
+
+#---OTHER OPTIONS---#
+# cite_col: ""
+# url_col: ""
+# link_col: ""
+# footnote_textcol: ""
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+#main-img-left, #main-img-center, #main-img-right {
+ width: 3%;
+}
+</style>
+
+
+# INTRODUCTION
+
+Meditation is a family of practices that constitutes a variety of cognitive processes embedded in a complex context that contribute to mental states along well-defined phenomenological dimensions [@Lutz2015] 
+
+Important neural markers of meditation training include the right anterior insula (RAI), dorsal cingulate cortex , subgenual anterior cingulate cortex (sgACC) and posterior cingulate cortex (PCC) [@Tang2015].
+
+There is a lack of evidence on the effective connectivity (i.e., causal mechanisms) underlying brain changes in meditation practices.
+
+**OBJECTIVE**  
+investigate effective connectivity (EC) changes of the ACCs, PCC, and RAI after a short-term meditation training using spectral dynamic causal modeling (spDCM)
+
+
+# METHODS
+
+**PARTICIPANTS**  
+1. 55 healthy undergraduates without any meditation experience were randomized into either the Integrative Body-Mind Training (IBMT) or Relaxation Training (RT)  
+2. Participants completed four weeks of training, 30 minutes each for 20 sessiosn (10 hours total)  
+
+**IBMT & RT**  
+1. IBMT involves several body-mind techniques, including (1) body relaxation, (2) breath adjustment, (3) mental imagery, (4) mindfulness   
+2. RT involves relaxing different muscle groups over the face, head, shoulders, arms, legs, chest, back, and so on.  
+
+**NEUROIMAGING PROCEDURE & ANALYSIS**  
+
+Resting-state fMRI (rsfMRI) scans were taken a week before and after the intervention, and standard preprocessing steps were taken  
+
+ROIs were defined from previous studies: PCC (8, -53, 27), vACC (-4, 45, -10), RAI (34, 22, 0), and dACC (4, 44, 0) [in MNI coordinates]     
+
+<center><img src="img/figure1.jpg" width="520" /></center>
+*Figure 1*
+
+Exploratory approach tp spDCM: fully connected two-state model specified to mimic organization of real cortical hierarchies  
+
+Hierachical Parametric Empirical Bayes (PEBs) were used to estimate group*time differences in the EC
+
+# RESULTS
+
+
+<center><img src="img/figure2.jpg" width="520" /></center>
+*Figure 2*
+
+RT involves mostly unidirectional excitatory connections (Figure 2A) while IBMT involves bidirectional changes. Furthermore, there were more excitatory input to the RAI while lesser excitatory output from the RAI.
+
+<center><img src="img/figure3.jpg" width="520" /></center>
+*Figure 3*
+
+After training, IBMT had less excitatory connections fom the vACC to AI at PP > 0.75. At a lower threshold (PP > 0.70), there is additional EC differences: 1) less excitatory connections from the PCC to RAI, and 2) more excitatory connections from the dACC to RAI.
+
+    
+
+# DISCUSSION 
+
+
+**Bidirectional loop in IBMT suggests the dynamic role of regulation found in IBMT but not in RT.**  
+
+* RAI and PCC suggest consistent updating in the system with regards to attentional focus [@Brewer2011]  
+* RAI and ACC informs self-regulation [@Tang2017]  
+
+**Distinct role of the vACC and AI**  
+
+* RT: activation of parasympathetic nervous system [@Palomero2019]    
+* IBMT: decoupling when resolving and regulating the acute emotional response to stress [@Shao2018]  
+
+**Click here to chat with me online on Zoom during the OHBM conference!!**
+
+
+# REFERENCES
+
